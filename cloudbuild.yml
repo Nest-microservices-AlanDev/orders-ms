@@ -4,7 +4,7 @@ steps:
       [
         "build",
         "-t",
-        "northamerica-south1-docker.pkg.dev/microservices-tienda-443601/image-registry/client-gateway",
+        "northamerica-south1-docker.pkg.dev/microservices-tienda-443601/image-registry/orders-ms",
         "-f",
         "dockerfile.prod",
         "--platform=linux/amd64",
@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "northamerica-south1-docker.pkg.dev/microservices-tienda-443601/image-registry/client-gateway",
+        "northamerica-south1-docker.pkg.dev/microservices-tienda-443601/image-registry/orders-ms",
       ]
 options:
   logging: CLOUD_LOGGING_ONLY
