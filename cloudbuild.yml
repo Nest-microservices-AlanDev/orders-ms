@@ -7,6 +7,8 @@ steps:
         "northamerica-south1-docker.pkg.dev/microservices-tienda-443601/image-registry/orders-ms",
         "-f",
         "dockerfile.prod",
+        "--build-arg",
+        "ORDERS_DATABASEURL=postgresql://neondb_owner:S0eplPZTADM1@ep-autumn-breeze-a5kk8t57.us-east-2.aws.neon.tech/neondb?sslmode=require",
         "--platform=linux/amd64",
         ".",
       ]
